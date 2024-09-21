@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="271px" height="127px" viewBox="0 0 271 127" style="background-color: #ffffffff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" >
+<text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 163.794 119.835)" style="font:normal normal normal 527px 'Arial'" >
+NH</text>
+<text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 201.852 124.08)" style="font:normal normal normal 395.25px 'Arial'" >
+2</text>
+<text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 2.3331 81.8897)" style="font:normal normal normal 527px 'Arial'" >
+H</text>
+<text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 21.3622 86.135)" style="font:normal normal normal 395.25px 'Arial'" >
+2</text>
+<text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 32.3532 81.8897)" style="font:normal normal normal 527px 'Arial'" >
+N</text>
+<text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 195.921 24.9725)" style="font:normal normal normal 527px 'Arial'" >
+O</text>
+<text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 228.781 81.8897)" style="font:normal normal normal 527px 'Arial'" >
+OH</text>
+<path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -311 -80)" d="M 9670.36,3063.94 L 9686.17,3054.81 L 9701.98,3063.94 L 9701.98,3534.54 L 9670.36,3534.54 L 9670.36,3063.94 Z " />
+<path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -311 -80)" d="M 9701.98,3063.94 L 9686.17,3054.81 L 9686.17,3036.55 L 10343.4,2657.11 L 10343.4,2693.62 L 9701.98,3063.94 Z " />
+<path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -311 -80)" d="M 9028.97,2693.62 L 9028.97,2657.11 L 9686.17,3036.55 L 9686.17,3054.81 L 9670.36,3063.94 L 9028.97,2693.62 Z " />
+<path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -311 -80)" d="M 8371.76,3073.06 L 8371.76,3036.55 L 9028.97,2657.11 L 9028.97,2693.62 L 8371.76,3073.06 Z " />
+<path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -311 -80)" d="M 7714.56,2693.62 L 7714.56,2657.11 L 8371.76,3036.55 L 8371.76,3073.06 L 7714.56,2693.62 Z " />
+<path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -311 -80)" d="M 7332.38,2914.27 L 7316.57,2886.89 L 7714.56,2657.11 L 7714.56,2693.62 L 7332.38,2914.27 Z " />
+<path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -311 -80)" d="M 10259.3,2189.94 L 10290.9,2189.94 L 10290.9,2714.8 L 10259.3,2714.8 L 10259.3,2189.94 Z " />
+<path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -311 -80)" d="M 10395.9,2189.94 L 10427.5,2189.94 L 10427.5,2714.8 L 10395.9,2714.8 L 10395.9,2189.94 Z " />
+<path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -311 -80)" d="M 10769.9,2903.38 L 10754.1,2930.76 L 10343.4,2693.62 L 10343.4,2657.11 L 10769.9,2903.38 Z " />
+</svg>
