@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="160px" height="120px" viewBox="0 0 160 120" style="background-color: #ffffff00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" >
+<text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.0666667 0 0 0.0666667 67.8855 114.339)" style="font:normal normal normal 200px 'Arial'" >
+NH</text>
+<text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.0666667 0 0 0.0666667 87.1434 117.272)" style="font:normal normal normal 150px 'Arial'" >
+2</text>
+<text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.0666667 0 0 0.0666667 102.127 14.3389)" style="font:normal normal normal 200px 'Arial'" >
+O</text>
+<text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.0666667 0 0 0.0666667 136.768 74.3389)" style="font:normal normal normal 200px 'Arial'" >
+OH</text>
+<path stroke="transparent" fill="#000000" transform="matrix(0.0666667 0 0 0.0666667 -32.0667 -9.33333)" d="M 1631.28,1674.25 L 1511.28,1674.25 L 1560.73,1182.54 L 1571.28,1177.08 L 1581.83,1182.54 L 1631.28,1674.25 Z " />
+<path stroke="transparent" fill="#000000" transform="matrix(0.0666667 0 0 0.0666667 -32.0667 -9.33333)" d="M 1581.83,1182.54 L 1571.28,1177.08 L 1571.28,1165.54 L 2090.9,865.536 L 2090.9,888.63 L 1581.83,1182.54 Z " />
+<path stroke="transparent" fill="#000000" transform="matrix(0.0666667 0 0 0.0666667 -32.0667 -9.33333)" d="M 1051.67,888.63 L 1051.67,877.083 L 1061.67,871.31 L 1571.28,1165.54 L 1571.28,1177.08 L 1560.73,1182.54 L 1051.67,888.63 Z " />
+<path stroke="transparent" fill="#000000" transform="matrix(0.0666667 0 0 0.0666667 -32.0667 -9.33333)" d="M 537.053,1185.74 L 527.053,1168.42 L 1041.67,871.31 L 1051.67,877.083 L 1051.67,888.63 L 537.053,1185.74 Z " />
+<path stroke="transparent" fill="#000000" transform="matrix(0.0666667 0 0 0.0666667 -32.0667 -9.33333)" d="M 1041.67,277.083 L 1061.67,277.083 L 1061.67,871.31 L 1051.67,877.083 L 1041.67,871.31 L 1041.67,277.083 Z " />
+<path stroke="transparent" fill="#000000" transform="matrix(0.0666667 0 0 0.0666667 -32.0667 -9.33333)" d="M 2044.9,396.917 L 2064.9,396.917 L 2064.9,897.868 L 2044.9,897.868 L 2044.9,396.917 Z " />
+<path stroke="transparent" fill="#000000" transform="matrix(0.0666667 0 0 0.0666667 -32.0667 -9.33333)" d="M 2116.9,396.917 L 2136.9,396.917 L 2136.9,897.868 L 2116.9,897.868 L 2116.9,396.917 Z " />
+<path stroke="transparent" fill="#000000" transform="matrix(0.0666667 0 0 0.0666667 -32.0667 -9.33333)" d="M 2521.83,1114.33 L 2511.83,1131.65 L 2090.9,888.63 L 2090.9,865.536 L 2521.83,1114.33 Z " />
+</svg>

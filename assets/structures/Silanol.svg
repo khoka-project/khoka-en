@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="86px" height="20px" viewBox="0 0 86 20" style="background-color: #ffffff00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" >
+<text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.0666667 0 0 0.0666667 2.72926 14.3056)" style="font:normal normal normal 200px 'Arial'" >
+H</text>
+<text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.0666667 0 0 0.0666667 12.3582 17.2389)" style="font:normal normal normal 150px 'Arial'" >
+3</text>
+<text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.0666667 0 0 0.0666667 17.9197 14.3056)" style="font:normal normal normal 200px 'Arial'" >
+Si</text>
+<text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.0666667 0 0 0.0666667 63.1085 14.3056)" style="font:normal normal normal 200px 'Arial'" >
+OH</text>
+<path stroke="transparent" fill="#000000" transform="matrix(0.0666667 0 0 0.0666667 -50.0667 -32.3333)" d="M 1667.63,611.583 L 1667.63,631.583 L 1223.94,631.583 L 1223.94,611.583 L 1667.63,611.583 Z " />
+</svg>
