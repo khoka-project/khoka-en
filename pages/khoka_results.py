@@ -70,6 +70,7 @@ portada =  dbc.Row(
 resultado = [dbc.Row([
     dbc.Row(className="espaciado_96_esc espaciado_96_mov"),
     html.Div("RESULTS", className="body-title-green"),
+    dbc.Row([dbc.Col([
     dbc.Container(
             [
             # CARACTERIZACION QUIMICA POR VARIEDADES
@@ -79,57 +80,58 @@ resultado = [dbc.Row([
             dbc.Row("Explore the chemical profile of each coca variety to learn about the metabolites they contain, which ones have biological activity, and visualize the chromatograms of each sample studied.",style={'textAlign':'center'}),
             dbc.Row(className="espaciado_48_esc espaciado_48_mov")],className="subcontainer-results"),
     dbc.Row([
-        dbc.Col(html.Img(src="/assets/trux.png", height="150px"), width=3,style={"padding":0}),
-        dbc.Col(html.Img(src="/assets/ipadu.png", height="150px"), width=3,style={"padding":0}),
-        dbc.Col(html.Img(src="/assets/coca.png", id="h-coca", height="150px"), width=3,style={"padding":0}),
-        dbc.Col(html.Img(src="/assets/novo.png", height="150px"), width=3,style={"padding":0})
-    ], justify="around"),
+        dbc.Col(html.Img(src="/assets/trux.png", height="150px"), width=2,style={"padding":0}),
+        dbc.Col(html.Img(src="/assets/ipadu.png", height="150px"), width=2,style={"padding":0}),
+        dbc.Col(html.Img(src="/assets/coca.png", id="h-coca", height="150px"), width=2,style={"padding":0}),
+        dbc.Col(html.Img(src="/assets/novo.png", height="150px"), width=2,style={"padding":0})
+    ], justify="center"),
     dbc.Row(style={'height':'1rem'}),
     dbc.Row([dbc.Col([
                         html.A(["Erythroxylum novogranatense ",html.Span(" var. ",className="var")," truxillense"],href=f"#all_compounds_treemap",
-                        className="var_tru_text",id="trux", n_clicks=0)],id="trux_box",className="var_tru_box"),
+                        className="var_trux_text ",id="trux", n_clicks=0)],id="trux_box",className="var_trux_box",width=4),
                     
                     dbc.Col([  
                         html.A(["Erythroxylum coca ",html.Span("var. ",className="var")," ipadu"],href=f"#all_compounds_treemap",
-                        className="var_ipadu_text", id="ipadu", n_clicks=0)],id="ipadu_box",className="var_ipadu_box"),
+                        className="var_ipadu_text", id="ipadu", n_clicks=0)],id="ipadu_box",className="var_ipadu_box",width=4),
                
                     dbc.Col([ 
                         html.A(["Erythroxylum coca ",html.Span("var. ",className="var")," coca"],href=f"#all_compounds_treemap",
-                        className="var_coca_text", id="coca")],id="coca_box",className="var_coca_box"),
+                        className="var_coca_text", id="coca")],id="coca_box",className="var_coca_box",width=4),
                     dbc.Col([ 
                         html.A(["Erythroxylum novogranatense ",html.Span("var. ",className="var")," novogranatense"],href=f"#all_compounds_treemap",
-                        className="var_novo_text", id="novo")],id="novo_box",className="var_novo_box"),
+                        className="var_novo_text", id="novo")],id="novo_box",className="var_novo_box",width=4),
                     dcc.Store(id='clicked-button', data=None)
-                    ],className="gap-1",justify="between"), 
+                    ],className="gap-1",justify="center"), 
     dbc.Container([
             dbc.Row(className="espaciado_48_esc espaciado_48_mov"),
             dbc.Row("This graph shows all the metabolites found in this coca variety. You can select between primary and secondary metabolites, view their molecular structure, and learn more about them.",style={'textAlign':'center'}),
             dbc.Row(className="espaciado_48_esc espaciado_48_mov"),
             ],className="subcontainer-results"),
     dbc.Row(html.Div(html.Div(id='all_compounds_treemap',className="treemap"))),
-    dbc.Row(className="espaciado_48_esc espaciado_48_mov"),
-    dbc.Row(dbc.Col(html.Div(id='compound_description',className="compound_description"))),
-    dbc.Row(className="espaciado_96_esc espaciado_96_mov"),   
-    dbc.Row(className="espaciado_24_esc espaciado_24_mov"),    
-    dbc.Row(className="espaciado_24_esc espaciado_24_mov"), 
+    dbc.Row(className="espaciado_48_esc hide"),
+    dbc.Row(className="espaciado_96_esc hide"),   
+   
     dbc.Container([    
             # COMPUESTOS BIOACTIVOS
             dbc.Row(html.Div("BIOACTIVE COMPOUNDS", id="compuestos_bioactivos", className="results_title")),
             dbc.Row(className="espaciado_48_esc espaciado_48_mov"),
             html.Div("Learn about the compounds in this coca variety that have biological activity, meaning they may have physiological effects on humans."),
-            ],className="subcontainer-results"),
+            ],className="subcontainer-results hide"),
     dbc.Row(className="espaciado_24_esc espaciado_24_mov"),
-    dbc.Row(html.Div(id='classification')),
-    dbc.Row(className="espaciado_96_esc espaciado_96_mov"),
+    dbc.Row(html.Div(id='classification'),className="hide"),
+    dbc.Row(className="espaciado_96_esc hide"),
     dbc.Container([ 
             # CROMATOGRAMA
             dbc.Row(className="espaciado_24_esc espaciado_24_mov"),
             dbc.Row(html.Div("CHROMATOGRAM", id="cromatogramas", className="results_title")),
             dbc.Row(className="espaciado_48_esc espaciado_48_mov"),
             html.Div("This chart shows the results of the chromatographic readings of each analyzed extract. It allows you to visualize the data by coca variety and extract type. The retention time indicates the chemical nature of the substance: a short retention time suggests compounds with a fatty nature, while a longer retention time indicates compounds that dissolve in water, such as sugars or amino acids."),            
-            ],className="subcontainer-results"),
-    dbc.Row(className="espaciado_24_esc espaciado_24_mov"),
-    dbc.Row([dbc.Col(html.Div(id='area_compounds'),width={"size":12,"order":1})]),
+            ],className="subcontainer-results hide"),
+    dbc.Row(className="espaciado_24_esc hide"),
+    dbc.Row([dbc.Col(html.Div(id='area_compounds'),width={"size":12,"order":1})],className="hide")],xs={"size": 12, "order": 1},md={"size": 6, "order": 1}),
+    
+    dbc.Col([html.Div(id='compound_description',className="compound_description")],className="compound_description_box", 
+            xs={"size": 12, "order": 2},md={"size": 6, "order": 2})]),
     ], className="container-results")]
     
 # Define the layout
@@ -180,7 +182,6 @@ def display_click_data(n_clicks1,n_clicks2,n_clicks3,n_clicks4):
         fig_5 = description()
         pagina_trux = True
         pagina_coca,pagina_ipadu,pagina_novo,pagina_khoka = False, False, False, False
-
 
     if ctx.triggered_id == 'coca' :
         fig_1 = treemap_layout()
@@ -759,8 +760,9 @@ def area_(value,n_clicks1,n_clicks2,n_clicks3,n_clicks4):
 
 def display_hover(hoverData1,hoverData2,hoverData3):
     global diccionario_esp_ing
-
+    
     if hoverData1 is not None:
+        print(hoverData1["points"][0]['label'])
         hover_data1 = diccionario_esp_ing[hoverData1["points"][0]['label']]
         bbox = hoverData1["points"][0]["bbox"]
         if str(hover_data1[-1]) == " ":
@@ -818,21 +820,27 @@ def display_hover(hoverData1,hoverData2,hoverData3):
         im_url = "/assets/structures/"+ compound +'.svg'
     
         children = [
+
             html.Img(
                 src=im_url,
                 style={"width": "200px"},
             ),
+            
         ]
         
         molecule_image="/assets/structures/"+ compound +'.svg'
+        
         return hoverData3["points"][0]['hovertext'], molecule_image,True, bbox, children, direction
 
 @callback(
     Output('compound_description_text','children'),
-    Input("titulo_descripcion_compound",'children')
+    Input("titulo_descripcion_compound",'children'),
+    Input("treemap", "hoverData")
    )
+   
 
-def texto_descriptivo(children):
+def texto_descriptivo(children,hoverData1):
+    
     variety = pd.read_csv(os.path.join(os.getcwd(),'khoka.csv'))
     variety_metabolitos_secundarios = list(variety['Secondary Metabolites'])
     variety_metabolitos_secundarios = [x for x in  variety_metabolitos_secundarios if pd.isnull(x) == False and x != 'nan']
@@ -850,6 +858,8 @@ def texto_descriptivo(children):
     else:
         texto_metabolito = relacion_metabolito_texto_p[children]
 
+    #if hoverData1['points'][0]['label'] == "Acids" :
+    #    texto_metabolito = "ESTE TEXTO SE DEBE MOSTRAR"
     return texto_metabolito
 
 @callback(
