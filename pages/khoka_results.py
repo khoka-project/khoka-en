@@ -225,23 +225,23 @@ def treemap_graph(value,n_clicks1,n_clicks2,n_clicks3,n_clicks4):
             opacidad = 1
             contador=1
             for i in [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']:         
-                if k == "Saturados":
+                if k == "Saturated":
                     clasificacion = [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']
                     # opacidad =   0.7
                     #color_palet[i]='rgba(117,68,40,'+str(opacidad)+')'
-                    color_palet["Saturados"]='rgba(134, 73, 117,'+str(opacidad)+')'
+                    color_palet["Saturated"]='rgba(134, 73, 117,'+str(opacidad)+')'
                     contador+=1
-                if k == "Insaturados":
+                if k == "Insaturated":
                     clasificacion = [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']
-                    # opacidad = 1
+                    # opacidad = 1Insaturated
                     #color_palet[i]='rgba(199, 119, 28,'+str(opacidad)+')'
-                    color_palet["Insaturados"]='rgba(18, 9, 124, '+str(opacidad)+')'
+                    color_palet["Insaturated"]='rgba(18, 9, 124, '+str(opacidad)+')'
                     contador+=1
-                if k == "Ácidos":
+                if k == "Acids":
                     clasificacion = [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']
                     # opacidad = 1
                     #color_palet[i]='rgba(77, 189, 132,'+str(opacidad)+')'
-                    color_palet['Ácidos']='rgba(0, 151, 131, '+str(opacidad)+')' 
+                    color_palet['Acids']='rgba(0, 151, 131, '+str(opacidad)+')' 
                     contador+=1
                 if k == "Bases":
                     clasificacion = [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']
@@ -249,47 +249,47 @@ def treemap_graph(value,n_clicks1,n_clicks2,n_clicks3,n_clicks4):
                     #color_palet[i]='rgba(120, 51, 109,'+str(opacidad)+')'
                     color_palet['Bases']='rgba(36, 192, 187, '+str(opacidad)+')'
                     contador+=1
-                if k == "Alcoholes":
+                if k == "Alcohols":
                     clasificacion = [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']
                     # opacidad = 1
                     #color_palet[i]='rgba(244, 111, 54,'+str(opacidad)+')'
-                    color_palet['Alcoholes']='rgba(184, 80, 117, '+str(opacidad)+')'
+                    color_palet['Alcohols']='rgba(184, 80, 117, '+str(opacidad)+')'
                     contador+=1
-                if k == "Aminoderivados":
+                if k == "Alcohols":
                     clasificacion = [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']
                     # opacidad = 1
                     #color_palet[i]= 'rgba(191, 59, 33,'+str(opacidad)+')'
-                    color_palet['Aminoderivados']= 'rgba(87, 180, 110, '+str(opacidad)+')'
+                    color_palet['Alcohols']= 'rgba(87, 180, 110, '+str(opacidad)+')'
                     contador+=1
-                if k == "Amidas":
+                if k == "Amides":
                     clasificacion = [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']
                     # opacidad = 1
                     #color_palet[i]='rgba(224, 182, 23,'+str(opacidad)+')' 
-                    color_palet['Amidas']='rgba(0, 132, 183, '+str(opacidad)+')'
+                    color_palet['Amides']='rgba(0, 132, 183, '+str(opacidad)+')'
                     contador+=1
-                if k == "Aldehídos":
+                if k == "Aldehydes":
                     clasificacion = [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']
                     # opacidad = 1
                     #color_palet[i]= 'rgba(82, 154, 52,'+str(opacidad)+')'
-                    color_palet['Aldehídos']= 'rgba(255, 66, 135, '+str(opacidad)+')'
+                    color_palet['Aldehydes']= 'rgba(255, 66, 135, '+str(opacidad)+')'
                     contador+=1
-                if k == "Glúcidos":
+                if k == "Carbohydrates":
                     clasificacion = [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']
                     # opacidad = 1
                     #color_palet[i]='rgba(219, 67, 88,'+str(opacidad)+')'
-                    color_palet['Glúcidos']='rgba(89, 147, 152, '+str(opacidad)+')'
+                    color_palet['Carbohydrates']='rgba(89, 147, 152, '+str(opacidad)+')'
                     contador+=1
-                if k == "Aminoácidos":
+                if k == "Amino acids":
                     clasificacion = [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']
                     # opacidad = 1
                     #color_palet[i]='rgba(102, 206, 245,'+str(opacidad)+')' 
-                    color_palet["Aminoácidos"]='rgba(137, 147, 151, '+str(opacidad)+')' 
+                    color_palet["Amino acids"]='rgba(137, 147, 151, '+str(opacidad)+')' 
                     contador+=1
-                if k == "Alcaloides":
+                if k == "Alkaloids":
                     clasificacion = [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']
                     # opacidad = 1
                     #color_palet[i]='rgba(36, 74, 143,'+str(opacidad)+')'
-                    color_palet["Alcaloides"]='rgba(89, 53, 140, '+str(opacidad)+')'
+                    color_palet["Alkaloids"]='rgba(89, 53, 140, '+str(opacidad)+')'
                     contador+=1
 
     if pagina_khoka == True:
@@ -519,26 +519,26 @@ def classification_(n_clicks):
     
     color_palet = {'(?)':"white"}
     for k in fila_cabecera[4:]:
-            contador= 1
-            opacidad = 1
+            contador=1
+            opacidad = 1        
             for i in [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']:         
-                if k == "Saturados":
+                if k == "Saturated":
                     clasificacion = [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']
-                    #opacidad = 1
+                    # opacidad =   0.7
                     #color_palet[i]='rgba(117,68,40,'+str(opacidad)+')'
-                    color_palet["Saturados"]='rgba(134, 73, 117,'+str(opacidad)+')'
+                    color_palet["Saturated"]='rgba(134, 73, 117,'+str(opacidad)+')'
                     contador+=1
-                if k == "Insaturados":
+                if k == "Insaturated":
                     clasificacion = [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']
-                    #opacidad = 1
+                    # opacidad = 1Insaturated
                     #color_palet[i]='rgba(199, 119, 28,'+str(opacidad)+')'
-                    color_palet["Insaturados"]='rgba(18, 9, 124, '+str(opacidad)+')'
+                    color_palet["Insaturated"]='rgba(18, 9, 124, '+str(opacidad)+')'
                     contador+=1
-                if k == "Ácidos":
+                if k == "Acids":
                     clasificacion = [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']
-                    #opacidad = 1
+                    # opacidad = 1
                     #color_palet[i]='rgba(77, 189, 132,'+str(opacidad)+')'
-                    color_palet['Ácidos']='rgba(0, 151, 131, '+str(opacidad)+')' 
+                    color_palet['Acids']='rgba(0, 151, 131, '+str(opacidad)+')' 
                     contador+=1
                 if k == "Bases":
                     clasificacion = [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']
@@ -546,47 +546,47 @@ def classification_(n_clicks):
                     #color_palet[i]='rgba(120, 51, 109,'+str(opacidad)+')'
                     color_palet['Bases']='rgba(36, 192, 187, '+str(opacidad)+')'
                     contador+=1
-                if k == "Alcoholes":
+                if k == "Alcohols":
                     clasificacion = [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']
                     # opacidad = 1
                     #color_palet[i]='rgba(244, 111, 54,'+str(opacidad)+')'
-                    color_palet['Alcoholes']='rgba(184, 80, 117, '+str(opacidad)+')'
+                    color_palet['Alcohols']='rgba(184, 80, 117, '+str(opacidad)+')'
                     contador+=1
-                if k == "Aminoderivados":
+                if k == "Alcohols":
                     clasificacion = [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']
                     # opacidad = 1
                     #color_palet[i]= 'rgba(191, 59, 33,'+str(opacidad)+')'
-                    color_palet['Aminoderivados']= 'rgba(87, 180, 110, '+str(opacidad)+')'
+                    color_palet['Alcohols']= 'rgba(87, 180, 110, '+str(opacidad)+')'
                     contador+=1
-                if k == "Amidas":
+                if k == "Amides":
                     clasificacion = [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']
-                    opacidad = 1
+                    # opacidad = 1
                     #color_palet[i]='rgba(224, 182, 23,'+str(opacidad)+')' 
-                    color_palet['Amidas']='rgba(0, 132, 183, '+str(opacidad)+')'
+                    color_palet['Amides']='rgba(0, 132, 183, '+str(opacidad)+')'
                     contador+=1
-                if k == "Aldehídos":
+                if k == "Aldehydes":
                     clasificacion = [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']
                     # opacidad = 1
                     #color_palet[i]= 'rgba(82, 154, 52,'+str(opacidad)+')'
-                    color_palet['Aldehídos']= 'rgba(255, 66, 135, '+str(opacidad)+')'
+                    color_palet['Aldehydes']= 'rgba(255, 66, 135, '+str(opacidad)+')'
                     contador+=1
-                if k == "Glúcidos":
+                if k == "Carbohydrates":
                     clasificacion = [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']
-                    # pacidad = 1
+                    # opacidad = 1
                     #color_palet[i]='rgba(219, 67, 88,'+str(opacidad)+')'
-                    color_palet['Glúcidos']='rgba(89, 147, 152, '+str(opacidad)+')'
+                    color_palet['Carbohydrates']='rgba(89, 147, 152, '+str(opacidad)+')'
                     contador+=1
-                if k == "Aminoácidos":
+                if k == "Amino acids":
                     clasificacion = [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']
                     # opacidad = 1
                     #color_palet[i]='rgba(102, 206, 245,'+str(opacidad)+')' 
-                    color_palet["Aminoácidos"]='rgba(137, 147, 151, '+str(opacidad)+')'
+                    color_palet["Amino acids"]='rgba(137, 147, 151, '+str(opacidad)+')' 
                     contador+=1
-                if k == "Alcaloides":
+                if k == "Alkaloids":
                     clasificacion = [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']
                     # opacidad = 1
                     #color_palet[i]='rgba(36, 74, 143,'+str(opacidad)+')'
-                    color_palet["Alcaloides"]='rgba(89, 53, 140, '+str(opacidad)+')'
+                    color_palet["Alkaloids"]='rgba(89, 53, 140, '+str(opacidad)+')'
                     contador+=1
     if pagina_khoka:
         figura = 'khoka'
