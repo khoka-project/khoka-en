@@ -60,6 +60,39 @@ html {
     height: 2rem;
 }
 
+.text-none {
+/*    display: none; */
+    margin-bottom: 2rem;
+}
+
+.boton-imagen {
+    width: 50px; 
+    height: 50px; 
+    background-position: center; 
+    border: none; 
+    cursor: pointer; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+/*    box-shadow: 0 8px 16px 0 rgba(26, 25, 25, 0.37), 0 6px 20px 0 rgba(26, 25, 25, 0.37); */
+}
+
+.boton-descarga {
+    border-radius: 12px;
+    width: 550px; 
+    height: 50px; 
+    background-position: center; 
+    background-color: var(--verde_claro);
+    border: none; 
+    cursor: pointer; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    box-shadow: 0 8px 16px 0 rgba(26, 25, 25, 0.37), 0 6px 20px 0 rgba(26, 25, 25, 0.37);
+}
+
 .italic-text {
     font-family: 'basker_120_italic';
     color: var(--verde_claro); /* Change the color as needed */
