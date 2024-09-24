@@ -45,8 +45,6 @@ html {
 @font-face {
     font-family: 'basker_120_italic';
     src: url('/assets/fonts/BV120Pro-Italic.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
 }
 /* General tools */
 
@@ -188,8 +186,8 @@ html {
 }
 
 .container-results {
-    margin-right: 22%; /* Ajustar el margen derecho de todo el diseño */
-    margin-left: 22%;
+    margin-right: 5%; /* Ajustar el margen derecho de todo el diseño */
+    margin-left: 5%;
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-family: 'basker_120';
@@ -361,13 +359,12 @@ html {
     padding: 0;
 }
 
-.var_tru_text {
+.var_trux_text {
     text-decoration: none;
     color: white;
     text-align:center;
-    font-family: storm-italic;
     font-size: 0.80rem;
-    font-family: 'basker_italic';
+    font-family: 'basker_120_italic';
     line-height: 1.5;
 }
 
@@ -383,9 +380,8 @@ html {
     text-decoration: none;
     color: white;
     text-align:center;
-    font-family: storm-italic;
     font-size: 0.8rem;
-    font-family: 'basker_italic';
+    font-family: 'basker_120_italic';
     line-height: 1.5;
 }
 
@@ -406,9 +402,8 @@ html {
     text-decoration: none;
     color: white;
     text-align:center;
-    font-family: storm-italic;
     font-size: 0.8rem;
-    font-family: 'basker_italic';
+    font-family: 'basker_120_italic';
     line-height: 1.5;
 }
 
@@ -428,9 +423,8 @@ html {
     text-decoration: none;
     color: white;
     text-align:center;
-    font-family: storm-italic;
     font-size: 0.8rem;
-    font-family: 'basker_italic';
+    font-family: 'basker_120_italic';
     line-height: 1.5;
 }
 
@@ -470,6 +464,8 @@ html {
 .compound_description {
     padding: 2.3rem;
     border: 1px solid black;
+    position: sticky;   
+    top: 6rem;
     
 }
 
@@ -483,6 +479,9 @@ html {
     font-size: 1.3rem;
 }
 
+.compound_description_box {
+    padding-top: 3rem;
+}
 /* RESPONSIVE 1024 x 600 */
 
 @media (max-width: 600px) {
@@ -606,13 +605,12 @@ html {
         flex-direction: column;
     }
 
-    .var_tru_text {
+    .var_trux_text {
         text-decoration: none;
         color: white;
         text-align:center;
-        font-family: storm-italic;
         font-size: 0.80rem;
-        font-family: 'basker_italic';
+        font-family: 'basker_120_italic';
         line-height: 1.2;
     }
 
@@ -634,9 +632,8 @@ html {
         text-decoration: none;
         color: white;
         text-align:center;
-        font-family: storm-italic;
         font-size: 0.8rem;
-        font-family: 'basker_italic';
+        font-family: 'basker_120_italic';
         line-height: 1.1;
     }
     
@@ -644,9 +641,8 @@ html {
         text-decoration: none;
         color: white;
         text-align:center;
-        font-family: storm-italic;
         font-size: 0.8rem;
-        font-family: 'basker_italic';
+        font-family: 'basker_120_italic';
         line-height: 1.1;
     }
     
@@ -654,9 +650,8 @@ html {
         text-decoration: none;
         color: white;
         text-align:center;
-        font-family: storm-italic;
         font-size: 0.8rem;
-        font-family: 'basker_italic';
+        font-family: 'basker_120_italic';
         line-height: 1.2;
     }
 
@@ -664,6 +659,9 @@ html {
         font-size: 0.95rem;
     }
     
+    .hide {
+        display: none;
+    }
 
 }
 
