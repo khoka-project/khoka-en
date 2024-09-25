@@ -93,7 +93,7 @@ nav= dbc.Nav(
                                     href=f"#conclu_var-2",external_link=True,style={"fontFamily":"basker_120","fontSize":"0.8rem","line-height":"1"}),
                                 dbc.DropdownMenuItem(["Comparison of Compounds Reported in Literature vs. Those Present in the ", html.Span("Khoka Project", className="italic-text"), " Garden."], header=False,
                                     href=f"#conclu_compara",external_link=True,style={"fontFamily":"basker_120","fontSize":"1rem","line-height":"1"}),
-                                dbc.DropdownMenuItem("REFERENCIAS BIBLIOGRÁFICAS", header=False,
+                                dbc.DropdownMenuItem("BIBLIOGRAPHIC REFERENCES", header=False,
                                     href=f"#conclu_referen",external_link=True,style={"fontFamily":"basker_120","fontSize":"1rem","line-height":"1"}),
                             ],
                             class_name='conclusions',
