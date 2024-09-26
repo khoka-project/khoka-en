@@ -66,9 +66,9 @@ portada =  dbc.Row(
         ]
                 )
 
-resultado = [dbc.Row([
+resultado = [dbc.Col([
     dbc.Row(className="espaciado_96_esc espaciado_96_mov"),
-    html.Div("RESULTS", className="body-title-green"),
+    dbc.Row(html.Div("RESULTS"), className="body-title-green"),
     dbc.Row([dbc.Col([
     dbc.Container(
             [
