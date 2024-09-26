@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="iso-8859-1"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:rdkit="http://www.rdkit.org/xml" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" xml:space="preserve" width="114.3px" height="41.55px" viewBox="0 0 3810 1385">
-<!-- END OF HEADER -->
-<rect style="opacity:1.0;fill:#00000000;stroke:none" width="3810.0" height="1385.0" x="0.0" y="0.0"> </rect>
-<path class="bond-0 atom-0 atom-1" d="M 191.9,326.2 L 1904.9,1315.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:90.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
-<path class="bond-0 atom-0 atom-1" d="M 340.3,69.2 L 1904.9,972.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:90.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
-<path class="bond-1 atom-1 atom-2" d="M 1904.9,1315.2 L 3618.1,326.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:90.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
-<path d="M 1819.3,1265.8 L 1904.9,1315.2 L 1990.6,1265.8" style="fill:none;stroke:#000000;stroke-width:90.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"/>
-</svg>
