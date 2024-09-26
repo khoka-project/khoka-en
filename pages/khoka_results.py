@@ -107,6 +107,7 @@ resultado = [dbc.Row([
             dbc.Row(className="espaciado_48_esc espaciado_48_mov"),
             ],className="subcontainer-results"),
     dbc.Row(html.Div(html.Div(id='all_compounds_treemap',className="treemap"))),
+    html.Div([html.Span("*Chromatographic percentage: Area of the species over the total area of the chromatography.",className="footer-image footer-image-mobil" )]),
     dbc.Row(className="espaciado_48_esc hide"),
     dbc.Row(className="espaciado_96_esc hide"),   
    
