@@ -96,7 +96,7 @@ conclusiones = dbc.Container(
                 dbc.Row(className="espaciado_96_esc espaciado_96_mov"),
 
 
-                html.Div("Conclusions from the Study of Metabolites in Coca Varieties"),
+                html.Div("Conclusions from the Study of Metabolites in Coca Varieties",className="body-title-2",id="conclu_variedades"),
                 dbc.Row(className="espaciado_24_esc espaciado_24_mov"),
                 html.Div(["The comparative analysis of the four varieties revealed substantial differences in the presence and proportion of various secondary metabolites, with alkaloids and phenolic acids being the most notable."]),
                 dbc.Row(className="espaciado_48_esc espaciado_48_mov"),
