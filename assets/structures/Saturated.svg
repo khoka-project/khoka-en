@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="iso-8859-1"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:rdkit="http://www.rdkit.org/xml" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" xml:space="preserve" width="114.3px" height="33px" viewBox="0 0 3810 1100">
+<!-- END OF HEADER -->
+<rect style="opacity:1.0;fill:#00000000;stroke:none" width="3810.0" height="1100.0" x="0.0" y="0.0"> </rect>
+<path class="bond-0 atom-0 atom-1" d="M 190.5,1044.9 L 1904.9,55.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:90.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+<path class="bond-1 atom-1 atom-2" d="M 1904.9,55.0 L 3619.5,1045.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:90.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+<path d="M 1819.2,104.5 L 1904.9,55.0 L 1990.7,104.5" style="fill:none;stroke:#000000;stroke-width:90.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"/>
+</svg>
