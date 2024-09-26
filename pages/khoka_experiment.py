@@ -98,6 +98,7 @@ experimento = dbc.Container(
                 dbc.Row(className="espaciado_96_esc espaciado_96_mov"),
                 html.Img(src="/assets/h_exp_4_esc.webp",style={"width": "100%"},className="center-image large-image"),
                 html.Img(src="/assets/exp_4_m.webp",style={"width": "100%"},className="center-image small-image"),
+                html.A(className='boton-scroll',href='#top', children=html.Img(src='/assets/icon-top.jpeg',style={'width': '48px', 'height': '48px'})),
             ],
             className="container-text"
         ))

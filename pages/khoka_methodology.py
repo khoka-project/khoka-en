@@ -47,6 +47,7 @@ metodologia = dbc.Container(
                 dbc.Row(className="espaciado_24_esc espaciado_24_mov"),
                 html.Div(["The relationship between atomic mass values and macroscopic mass is established through the concept of a mole, which is the amount of substance that contains approximately 6.022 1367(36)x10²³ elementary entities, a figure corresponding to the numerical value of Avogadro's constant or Avogadro's number. This number represents the total amount of atoms present in 12 grams of the carbon-12 isotope."], className="body-footer"),
                 
+                html.A(className='boton-scroll',href='#top', children=html.Img(src='/assets/icon-top.jpeg',style={'width': '48px', 'height': '48px'})),
             ],
             className="container-text"
         ))

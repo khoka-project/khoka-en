@@ -68,6 +68,7 @@ bibliografia = dbc.Container(
                 html.Div(["Zhou, J.; Chan, L. & Zhou, S. (2012). Trigonelline: a plant alkaloid with therapeutic potential for diabetes and central nervous system disease. ", html.Span("Current Medicinal Chemistry",className="italic-text"),", 19(21), 3523-3531."],className="body-biblio"),
                 dbc.Row(className="espaciado_24_esc espaciado_24_mov"),
                 html.Div(["Zhou, S.; Huang, G. & Chen, G. (2019). Synthesis and biological activities of local anesthetics. ", html.Span("RSC Advances",className="italic-text"),", 9(70), 41173-41191. https://doi.org/10.1039/ c9ra09287k."],className="body-biblio"),
+                html.A(className='boton-scroll',href='#top', children=html.Img(src='/assets/icon-top.jpeg',style={'width': '48px', 'height': '48px'})),
 
 
                 

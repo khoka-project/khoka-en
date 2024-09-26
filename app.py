@@ -10,10 +10,20 @@ app = dash.Dash(__name__, use_pages=True , external_stylesheets=[dbc.themes.BOOT
 
 server = app.server
 
-header = [
-            html.Img(src=os.path.join(os.getcwd(),"/assets/header.webp"),className="header-image  large-image"),
-            html.Img(src=os.path.join(os.getcwd(),"/assets/header_m.webp"),className="header-image  small-image_header"),
-         ]
+header = dbc.Row([
+            dbc.Col([],width=1),
+            dbc.Col([
+            html.Img(src=os.path.join(os.getcwd(),"/assets/header.webp"),className="header-image large-image", style={'width':'100%'}),
+            html.Img(src=os.path.join("/assets/header_m.webp"),className="header-image small-image_header", style={'width':'100%'}),
+
+            ],width=9),
+            dbc.Col([
+            html.A(html.Button(children=html.Img(src='/assets/ES-PC.jpg',style={'width': '48px', 'height': '48px'}), id='bt-language', className='boton-language large-image'), href='https://khoka-sp-gzy5.onrender.com', target='_blank'),
+            html.A(html.Button(children=html.Img(src='/assets/ES-MOVIL.jpg',style={'width': '36px', 'height': '36px'}), id='bt-language1', className='boton-language_m header-image small-image_header'), href='https://khoka-sp-gzy5.onrender.com', target='_blank'),
+
+            ],width=1),
+            dbc.Col([],width=1),
+        ],style={'align-items':'center'})
 
 nav= dbc.Nav(
                     [
@@ -58,9 +68,9 @@ nav= dbc.Nav(
                         dbc.DropdownMenu(
                             [
 
-                                dbc.DropdownMenuItem("Chemical Characterization by Variety",style={"fontFamily":"basker_120","fontSize":"0.8rem","line-height":"1"}, href=f"#caracterizacion",external_link=True),
-                                dbc.DropdownMenuItem("Bioactive Compounds",style={"fontFamily":"basker_120","fontSize":"0.8rem","line-height":"1"}, href=f"#compuestos_bioactivos",external_link=True),
-                                dbc.DropdownMenuItem("Chromatogram",style={"fontFamily":"basker_120","fontSize":"0.8rem","line-height":"1"}, href=f"#cromatogramas",external_link=True)
+                                dbc.DropdownMenuItem("CHEMICAL CHARACTERIZATION BY VARIETY",style={"fontFamily":"basker_120","fontSize":"0.75rem","line-height":"1"}, href=f"#caracterizacion",external_link=True),
+                                dbc.DropdownMenuItem("BIOACTIVE COMPOUNDS",style={"fontFamily":"basker_120","fontSize":"0.75rem","line-height":"1"},className="hide", href=f"#compuestos_bioactivos",external_link=True),
+                                dbc.DropdownMenuItem("CHROMATOGRAMS",style={"fontFamily":"basker_120","fontSize":"0.75rem","line-height":"1"},className="hide", href=f"#cromatogramas",external_link=True)
 
                             ],
                             nav=True,
@@ -100,7 +110,7 @@ nav= dbc.Nav(
                             nav=True,
                             in_navbar=True,
                             label=dbc.NavLink("CONCLUSIONS", href="/khoka_conclusions",style={'padding':0}),    
-                        ),
+                        ),  
                         dbc.DropdownMenu(
                             class_name='glosary',
                             nav=True,
@@ -120,7 +130,8 @@ nav= dbc.Nav(
                     style={'fontFamily': 'clutadella_light','backgroundColor': '#9abf99'},
                     justified=True,
                     pills=True,
-                    class_name='custom-nav'
+                    class_name='custom-nav',
+                    id='top'
             )
 
 app.layout = html.Div([
@@ -132,7 +143,8 @@ app.layout = html.Div([
                 md={"size": 12, "order": 1},
                 lg={"size": 12, "order": 1},
                 xl={"size": 12, "order": 1},
-                style={'paddingRight':'0rem','paddingLeft':'0rem'}
+                style={'justify':'center'},
+                
             ),
             dbc.Col(
                 nav,
@@ -148,10 +160,15 @@ app.layout = html.Div([
             ])
 
 # Define the layout of the page
-for page in dash.page_registry.values():
-    print('name:', page['name'])
-    print('url:', page['path'])
+# for page in dash.page_registry.values():
+#     print('name:', page['name'])
+#     print('url:', page['path'])
+
+PORT = 8050
+HOST = '0.0.0.0'
 
 if __name__ == "__main__":
     app.run_server(
-        debug=True)
+        debug=True,
+        host= HOST,
+        port = PORT)

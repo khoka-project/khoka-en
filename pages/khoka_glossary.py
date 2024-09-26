@@ -298,6 +298,7 @@ glosario = dbc.Container(
                 html.Div(["A xenobiotic is a chemical substance that is foreign to an organism and not naturally produced by it. These substances can include drugs, environmental pollutants, and other synthetic chemicals that may be introduced into the body through various pathways. Xenobiotics can sometimes be metabolized by the organism, although they may also cause harmful effects if they accumulate."]),
                        dbc.Row(className="espaciado_48_esc espaciado_48_mov"),
 
+                html.A(className='boton-scroll',href='#top', children=html.Img(src='/assets/icon-top.jpeg',style={'width': '48px', 'height': '48px'})),
 
 
                 

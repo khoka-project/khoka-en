@@ -71,6 +71,7 @@ introduccion = dbc.Container(
                 html.Div("Metabolomics in Coca Research",className="body-title-2L",id="intro_metabol_4"),
                 dbc.Row(className="espaciado_24_esc espaciado_24_mov"),
                 html.Div(["Studying the coca plant from a metabolomic perspective means expanding our understanding of the plant’s chemistry, delving into the various metabolites it produces and their potential industrial, pharmacological, and therapeutic applications."]),
+                html.A(className='boton-scroll',href='#top', children=html.Img(src='/assets/icon-top.jpeg',style={'width': '48px', 'height': '48px'})),
             ],
             className="container-text"
         ))

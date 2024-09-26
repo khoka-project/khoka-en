@@ -42,8 +42,7 @@ def description():
         dbc.Row(className="espaciado_24_esc espaciado_24_mov"),
         dbc.Row([dbc.Col(html.Img(id='compound_image',className="compound_images",src="../assets/structures/Cocaine.svg"),xs={"size":12},lg={"size":6},
                         ),
-        dbc.Col(html.P('Se conoce también como benzoilmetilecgonina. Es un alcaloide tipo tropano y fuerte estimulante. \
-                       La cocaína tiene conocidos efectos vasoconstrictores y analgesicos locales',
+        dbc.Col(html.P('It is also known as benzoylmethylecgonine. It is a tropane-type alkaloid and strong stimulant.  Cocaine has known local vasoconstrictor and analgesic effects.',
                        id="compound_description_text", className="text_description compound_descriptions"),xs={"size":12},lg={"size":6})])]
     return description_block
 
@@ -123,7 +122,7 @@ resultado = [dbc.Row([
     dbc.Container([ 
             # CROMATOGRAMA
             dbc.Row(className="espaciado_24_esc espaciado_24_mov"),
-            dbc.Row(html.Div("CHROMATOGRAM", id="cromatogramas", className="results_title")),
+            dbc.Row(html.Div("CHROMATOGRAMS", id="cromatogramas", className="results_title")),
             dbc.Row(className="espaciado_48_esc espaciado_48_mov"),
             html.Div("This chart shows the results of the chromatographic readings of each analyzed extract. It allows you to visualize the data by coca variety and extract type. The retention time indicates the chemical nature of the substance: a short retention time suggests compounds with a fatty nature, while a longer retention time indicates compounds that dissolve in water, such as sugars or amino acids."),            
             ],className="subcontainer-results hide"),
@@ -132,6 +131,8 @@ resultado = [dbc.Row([
     
     dbc.Col([html.Div(id='compound_description',className="compound_description")],className="compound_description_box", 
             xs={"size": 12, "order": 2},md={"size": 6, "order": 2})]),
+
+    html.A(className='boton-scroll',href='#top', children=html.Img(src='/assets/icon-top.jpeg',style={'width': '48px', 'height': '48px'})),
     ], className="container-results")]
     
 # Define the layout
@@ -255,12 +256,6 @@ def treemap_graph(value,n_clicks1,n_clicks2,n_clicks3,n_clicks4):
                     # opacidad = 1
                     #color_palet[i]='rgba(244, 111, 54,'+str(opacidad)+')'
                     color_palet['Alcohols']='rgba(184, 80, 117, '+str(opacidad)+')'
-                    contador+=1
-                if k == "Alcohols":
-                    clasificacion = [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']
-                    # opacidad = 1
-                    #color_palet[i]= 'rgba(191, 59, 33,'+str(opacidad)+')'
-                    color_palet['Alcohols']= 'rgba(87, 180, 110, '+str(opacidad)+')'
                     contador+=1
                 if k == "Amides":
                     clasificacion = [x for x in variety[k] if pd.isnull(x) == False and x != 'nan']
