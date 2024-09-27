@@ -119,7 +119,7 @@ nav= dbc.Nav(
                             class_name='bibliography',
                             nav=True,
                             in_navbar=True,
-                            label=dbc.NavLink("BIBLIOGRAPHY", href="/khoka_bibliography",style={'padding':0,'marginRight':'1.2rem'}),    
+                            label=dbc.NavLink("BIBLIOGRAPHY", href="/khoka_bibliography",style={'padding':0,'marginRight':'4rem'}),    
                         ),
                     ],
                     style={'fontFamily': 'clutadella_light','backgroundColor': '#9abf99'},
