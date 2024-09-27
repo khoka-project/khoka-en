@@ -74,7 +74,7 @@ resultado = [dbc.Col([
             [
             # CARACTERIZACION QUIMICA POR VARIEDADES
             dbc.Row(className="espaciado_96_esc espaciado_96_mov"),
-            dbc.Row([html.Div("CHEMICAL CHARACTERIZATION BY VARIETY",className="results_title")],id="caracterizacion"),
+            dbc.Row([html.Div("Chemical characterization by variety",className="results_title")],id="caracterizacion"),
             dbc.Row(className="espaciado_48_esc espaciado_48_mov"),
             dbc.Row("Explore the chemical profile of each coca variety to learn about the metabolites they contain, which ones have biological activity, and visualize the chromatograms of each sample studied.",style={'textAlign':'center'}),
             dbc.Row(className="espaciado_48_esc espaciado_48_mov")],className="subcontainer-results"),
@@ -113,7 +113,7 @@ resultado = [dbc.Col([
    
     dbc.Container([    
             # COMPUESTOS BIOACTIVOS
-            dbc.Row(html.Div("BIOACTIVE COMPOUNDS", id="compuestos_bioactivos", className="results_title")),
+            dbc.Row(html.Div("Bioactive compounds", id="compuestos_bioactivos", className="results_title")),
             dbc.Row(className="espaciado_48_esc espaciado_48_mov"),
             html.Div("Learn about the compounds in this coca variety that have biological activity, meaning they may have physiological effects on humans."),
             ],className="subcontainer-results hide"),
@@ -123,7 +123,7 @@ resultado = [dbc.Col([
     dbc.Container([ 
             # CROMATOGRAMA
             dbc.Row(className="espaciado_24_esc espaciado_24_mov"),
-            dbc.Row(html.Div("CHROMATOGRAMS", id="cromatogramas", className="results_title")),
+            dbc.Row(html.Div("Chromatograms", id="cromatogramas", className="results_title")),
             dbc.Row(className="espaciado_48_esc espaciado_48_mov"),
             html.Div("This chart shows the results of the chromatographic readings of each analyzed extract. It allows you to visualize the data by coca variety and extract type. The retention time indicates the chemical nature of the substance: a short retention time suggests compounds with a fatty nature, while a longer retention time indicates compounds that dissolve in water, such as sugars or amino acids."),            
             ],className="subcontainer-results hide"),
