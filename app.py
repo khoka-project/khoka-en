@@ -27,9 +27,7 @@ header = dbc.Row([
 
 nav= dbc.Nav(
                     [
-                        dbc.Col(
-                            width=1
-                        ),
+                        
                         dbc.DropdownMenu(
                             [
                                 dbc.DropdownMenuItem("What is Metabolomics?", header=False,
@@ -122,9 +120,6 @@ nav= dbc.Nav(
                             nav=True,
                             in_navbar=True,
                             label=dbc.NavLink("BIBLIOGRAPHY", href="/khoka_bibliography",style={'padding':0}),    
-                        ),
-                        dbc.Col(
-                            width=1
                         ),
                     ],
                     style={'fontFamily': 'clutadella_light','backgroundColor': '#9abf99'},
