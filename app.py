@@ -45,7 +45,7 @@ nav= dbc.Nav(
                             ],
                             nav=True,
                             in_navbar=True,
-                            label=dbc.NavLink("INTRODUCTION", href="/",style={'padding':0}),
+                            label=dbc.NavLink("INTRODUCTION", href="/",style={'padding':0,'marginLeft':'1rem'}),
                         ),
                         dbc.DropdownMenu(
                             [
@@ -119,7 +119,7 @@ nav= dbc.Nav(
                             class_name='bibliography',
                             nav=True,
                             in_navbar=True,
-                            label=dbc.NavLink("BIBLIOGRAPHY", href="/khoka_bibliography",style={'padding':0}),    
+                            label=dbc.NavLink("BIBLIOGRAPHY", href="/khoka_bibliography",style={'padding':0,'marginRight':'1rem'}),    
                         ),
                     ],
                     style={'fontFamily': 'clutadella_light','backgroundColor': '#9abf99'},
