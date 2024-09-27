@@ -729,7 +729,7 @@ def area_(value,n_clicks1,n_clicks2,n_clicks3,n_clicks4):
     # fin
     fig = px.scatter(variety_area, x=rows,y="RT",
                     size="Sample.1", hover_name=cromato_lista_final, color="RT",
-                    labels={"x": "Numero de Compuesto", "RT": "Tiempo de Retención"})
+                    labels={"x": "Compound Number", "RT": "Retention Time"})
     #fig.update_layout(title_text='Relative Area Compound (%)',title_y=0.95,title_x=0.5,plot_bgcolor='rgba(0,0,0,0)')
     fig.update_layout(plot_bgcolor='rgba(0,0,0,0)')
     #legend
